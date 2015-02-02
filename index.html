@@ -30,7 +30,7 @@
         <h3>
 <a id="abstract" class="anchor" href="#abstract" aria-hidden="true"><span class="octicon octicon-link"></span></a>Abstract</h3>
 
-<p><strong>Timing mechanisms allow operations to be executed at the correct time. The Web already has several mechanisms supporting timed operations, including setTimeout and setInterval, as well as controllers for media frameworks and animations. However, the Web lacks support for multi-device timing. A multi-device timing mechanism would allow timed operations across Web pages hosted by different devices. Multi-device timing is particularly important for the broadcasting industry, as it is the key enabler for web-based secondary device offerings. More generally, multi-device timing has wide utility in communication, collaboration and multi-screen presentation. This Community Group aims to define a common, multi-device, timing mechanism and a practical programming model. This will improve the Web as a platform for  time-sensitive, multi-device Web applications.</strong></p>
+<p><em><strong>Timing mechanisms allow operations to be executed at the correct time. The Web already has several mechanisms supporting timed operations, including setTimeout and setInterval, as well as controllers for media frameworks and animations. However, the Web lacks support for multi-device timing. A multi-device timing mechanism would allow timed operations across Web pages hosted by different devices. Multi-device timing is particularly important for the broadcasting industry, as it is the key enabler for web-based secondary device offerings. More generally, multi-device timing has wide utility in communication, collaboration and multi-screen presentation. This Community Group aims to define a common, multi-device, timing mechanism and a practical programming model. This will improve the Web as a platform for  time-sensitive, multi-device Web applications.</strong></em></p>
 
 <h3>
 <a id="multi-device-timing" class="anchor" href="#multi-device-timing" aria-hidden="true"><span class="octicon octicon-link"></span></a>Multi-device Timing</h3>
@@ -49,7 +49,7 @@
 <h4>
 <a id="vision" class="anchor" href="#vision" aria-hidden="true"><span class="octicon octicon-link"></span></a>Vision</h4>
 
-<p><strong>We envision multi-device timing resources, such as clocks, stop-watches, timeouts or controllers, to be explicitly represented as objects of the Web. This means that timing resources are identified by URL’s, and that they are hosted by dedicated Web servers or services. This way, multiple devices may share timing resources essentially by connecting to the same URL. Furthermore, devices may assert control over timing resources by interacting with a server-side object. For example, applications will have the ability to request timing resources to slow down or speed up, and request controllers to pause, resume or skip back to start. Effects of timing control will be equally available to all connected devices. Finally, since multi-device timing resources are true objects of the Web, traditional concepts of ownership and access control apply and may be enforced by servers. This way different permissions (i.e., read-only, read-write) may be given for different end-users and/or different application components.</strong> </p>
+<p><em><strong>We envision multi-device timing resources, such as clocks, stop-watches, timeouts or controllers, to be explicitly represented as objects of the Web. This means that timing resources are identified by URL’s, and that they are hosted by dedicated Web servers or services. This way, multiple devices may share timing resources essentially by connecting to the same URL. Furthermore, devices may assert control over timing resources by interacting with a server-side object. For example, applications will have the ability to request timing resources to slow down or speed up, and request controllers to pause, resume or skip back to start. Effects of timing control will be equally available to all connected devices. Finally, since multi-device timing resources are true objects of the Web, traditional concepts of ownership and access control apply and may be enforced by servers. This way different permissions (i.e., read-only, read-write) may be given for different end-users and/or different application components.</strong></em></p>
 
 <p>This vision is in line with the classical client-server architecture of the Web. The vision also enables a programming model, where Web applications can define and use application-level timing resources (e.g., clocks, stop-watches, timeouts or controllers) for application-specific purposes. These timing resources then drive the execution of relevant, time-sensitive aspects of that application. In effect, time-sensitive execution can be remote controlled from anywhere in the world, via the server hosting the timing resources. This approach naturally matches the event driven nature of modern Web applications.</p>
 
@@ -148,9 +148,12 @@ In particular, we imagine a common API between Web browsers and providers of mul
 <h3>
 <a id="references" class="anchor" href="#references" aria-hidden="true"><span class="octicon octicon-link"></span></a>References</h3>
 
-<p>[SMP] Shared Motion Proposal 
-<a href="https://lists.w3.org/Archives/Public/public-web-and-tv/2014Dec/0016.html/">https://lists.w3.org/Archives/Public/public-web-and-tv/2014Dec/0016.html/</a>
-<a href="https://lists.w3.org/Archives/Public/public-web-and-tv/2014Dec/0017.html/">https://lists.w3.org/Archives/Public/public-web-and-tv/2014Dec/0017.html/</a></p>
+<p>[SMP] Shared Motion Proposal </p>
+
+<ul>
+<li><a href="https://lists.w3.org/Archives/Public/public-web-and-tv/2014Dec/0016.html/">https://lists.w3.org/Archives/Public/public-web-and-tv/2014Dec/0016.html/</a></li>
+<li><a href="https://lists.w3.org/Archives/Public/public-web-and-tv/2014Dec/0017.html/">https://lists.w3.org/Archives/Public/public-web-and-tv/2014Dec/0017.html/</a></li>
+</ul>
 
 <p>[MSV] Ingar M. Arntzen, Njål T. Borch and Christopher P. Needham. 2013. "The Media State Vector: A unifying concept for multi-device media navigation". In Proceedings of the 5th Workshop on Mobile Video (MoVid '13). ACM, New York, NY, USA, 61-66.</p>
 
