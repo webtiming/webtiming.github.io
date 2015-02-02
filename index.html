@@ -4,11 +4,11 @@
   <head>
     <meta charset='utf-8'>
     <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <meta name="description" content="Multi-device Timing Community Group : Charter: Extending the Web with Multi-device Timing">
+    <meta name="description" content="Multi-device Timing : Community Group Charter: Extending the Web with Multi-device Timing">
 
     <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
 
-    <title>Multi-device Timing Community Group</title>
+    <title>Multi-device Timing</title>
   </head>
 
   <body>
@@ -18,8 +18,8 @@
         <header class="inner">
           <a id="forkme_banner" href="https://github.com/webtiming">View on GitHub</a>
 
-          <h1 id="project_title">Multi-device Timing Community Group</h1>
-          <h2 id="project_tagline">Charter: Extending the Web with Multi-device Timing</h2>
+          <h1 id="project_title">Multi-device Timing</h1>
+          <h2 id="project_tagline">Community Group Charter: Extending the Web with Multi-device Timing</h2>
 
         </header>
     </div>
@@ -53,14 +53,13 @@
 
 <p>This vision is in line with the classical client-server architecture of the Web. The vision also enables a programming model, where Web applications can define and use application-level timing resources (e.g., clocks, stop-watches, timeouts or controllers) for application-specific purposes. These timing resources then drive the execution of relevant, time-sensitive aspects of that application. In effect, time-sensitive execution can be remote controlled from anywhere in the world, via the server hosting the timing resources. This approach naturally matches the event driven nature of modern Web applications.</p>
 
-<p>Multi-device timing resources will be modelled after existing timing concepts, i.e., the system clock, stop-watches, timeout-mechanisms, and controllers of media and animation frameworks. In short, the CG aims to provide multi-device implementations of these concepts (with the realisation that this may call for modifications to existing concepts and API’s). </p>
+<p>Multi-device timing resources will be modeled after existing timing concepts, i.e., the system clock, stop-watches, timeout-mechanisms, and controllers of media and animation frameworks. In short, the CG aims to provide multi-device implementations of these concepts (with the realization that this may call for modifications to existing concepts and API’s). </p>
 
-<p>Multi-device timing implies that timing resources may easily be shared between distributed components in a multi-device Web application, or even between different applications all together. Note also that multi-device timing resources support the abstraction of being simultaneous (in real time). Essentially they implement distributed agreement in time. So, if an application-specific media controller is shared between, say a 100.000 devices, and they all evaluate the controller currentTime property (during playback), at exactly the same moment in time, they ideally should get the the same media offset. Furthermore, if one device requests the controller to skip ahead by 5 seconds, this ideally affects all connected clients equally and immediately. Implementations of multi-device timing resources must approximate this ideal behaviour as precisely as possible.</p>
+<p>Multi-device timing implies that timing resources may easily be shared between distributed components in a multi-device Web application, or even between different applications all together. Note also that multi-device timing resources support the abstraction of being simultaneous (in real time). Essentially they implement distributed agreement in time. So, if an application-specific media controller is shared between, say a 100.000 devices, and they all evaluate the controller <em>currentTime</em> property (during playback), at exactly the same moment in time, they ideally should get the the same media offset. Furthermore, if one device requests the controller to skip ahead by 5 seconds, this ideally affects all connected clients equally and immediately. Implementations of multi-device timing resources must approximate this ideal behaviour as precisely as possible.</p>
 
 <p>Furthermore, precise multi-device timing must be available for any permutation of device, network connection, OS or Web-browser. In short, multi-device timing resources should be available whenever and wherever the Web is available.</p>
 
-<p>Finally, a main goal for a multi-device programming model is to facilitate easy and flexible combination of time-sensitive application components within multi-device applications. 
-In particular, we imagine a common API between Web browsers and providers of multi-device timing resources. A common API would be a great contribution to the interoperability of time-sensitive application components, and would even allow independent systems to share temporal aspects without necessarily sharing any application data. A common API would also work against a development of proprietary timing solutions and technological “islands”.    </p>
+<p>Finally, a main goal for a multi-device programming model is to facilitate easy and flexible combination of time-sensitive application components within multi-device applications. In particular, we imagine a common API between Web browsers and providers of multi-device timing resources. A common API would be a great contribution to the interoperability of time-sensitive application components, and would even allow independent systems to share temporal aspects without necessarily sharing any application data. A common API would also work against a development of proprietary timing solutions and technological “islands”.    </p>
 
 <h3>
 <a id="scope-of-work" class="anchor" href="#scope-of-work" aria-hidden="true"><span class="octicon octicon-link"></span></a>Scope of Work</h3>
@@ -106,7 +105,7 @@ In particular, we imagine a common API between Web browsers and providers of mul
 <h3>
 <a id="community-and-business-group-process" class="anchor" href="#community-and-business-group-process" aria-hidden="true"><span class="octicon octicon-link"></span></a>Community and Business Group Process</h3>
 
-<p>Terms of in this charter that conflict with those of the Community and Business Group Process are void.</p>
+<p>Terms in this charter that conflict with those of the Community and Business Group Process are void.</p>
 
 <h4>
 <a id="work-limited-to-charter-scope" class="anchor" href="#work-limited-to-charter-scope" aria-hidden="true"><span class="octicon octicon-link"></span></a>Work Limited to Charter Scope</h4>
