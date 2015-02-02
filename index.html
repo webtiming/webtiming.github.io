@@ -49,7 +49,7 @@
 <h4>
 <a id="vision" class="anchor" href="#vision" aria-hidden="true"><span class="octicon octicon-link"></span></a>Vision</h4>
 
-<p><em>We envision multi-device timing resources, such as clocks, stop-watches, timeouts or controllers, to be explicitly represented as objects of the Web. This means that timing resources are identified by URL’s, and that they are hosted by dedicated Web servers or services. This way, multiple devices may share timing resources essentially by connecting to the same URL. Furthermore, devices may assert control over timing resources by interacting with a server-side object. For example, applications will have the ability to request timing resources to slow down or speed up, and request controllers to pause, resume or skip back to start. Effects of timing control will be equally available to all connected devices. Finally, since multi-device timing resources are true objects of the Web, traditional concepts of ownership and access control apply and may be enforced by servers. This way different permissions (i.e., read-only, read-write) may be given for different end-users and/or different application components.</em> </p>
+<p><strong>We envision multi-device timing resources, such as clocks, stop-watches, timeouts or controllers, to be explicitly represented as objects of the Web. This means that timing resources are identified by URL’s, and that they are hosted by dedicated Web servers or services. This way, multiple devices may share timing resources essentially by connecting to the same URL. Furthermore, devices may assert control over timing resources by interacting with a server-side object. For example, applications will have the ability to request timing resources to slow down or speed up, and request controllers to pause, resume or skip back to start. Effects of timing control will be equally available to all connected devices. Finally, since multi-device timing resources are true objects of the Web, traditional concepts of ownership and access control apply and may be enforced by servers. This way different permissions (i.e., read-only, read-write) may be given for different end-users and/or different application components.</strong> </p>
 
 <p>This vision is in line with the classical client-server architecture of the Web. The vision also enables a programming model, where Web applications can define and use application-level timing resources (e.g., clocks, stop-watches, timeouts or controllers) for application-specific purposes. These timing resources then drive the execution of relevant, time-sensitive aspects of that application. In effect, time-sensitive execution can be remote controlled from anywhere in the world, via the server hosting the timing resources. This approach naturally matches the event driven nature of modern Web applications.</p>
 
@@ -76,7 +76,7 @@ In particular, we imagine a common API between Web browsers and providers of mul
 
 <p>The outcome of this will likely be a combination of bug reports, API proposals and protocol specifications.</p>
 
-<p>The CG will borrow concepts, ideas and solutions from the Shared Motion proposal <a href="aka.%20Media%20State%20Vectors%20%5BMSV%5D">SMP</a> as a starting point. Shared Motions is a generic concept for multi-device timing on the Web, supporting clocks, stop-watches, timeouts and a wide variety of controllers. Shared Motion adopts the centralised approach where motions are hosted online by specialised motion services. Research on Shared Motion documents timing errors &lt; 10 ms when Shared Motion is used in distributed synchronization of HTML5 video and audio, by regular, non-optimised Web browsers [SYNQ]. Though the limits of scalability has not yet been formally documented, the light-weight nature of Shared Motion indicates that online timing services may be highly scalable.</p>
+<p>The CG will borrow concepts, ideas and solutions from the Shared Motion proposal [SMP] (aka. Media State Vectors [MSV]) as a starting point. Shared Motions is a generic concept for multi-device timing on the Web, supporting clocks, stop-watches, timeouts and a wide variety of controllers. Shared Motion adopts the centralised approach where motions are hosted online by specialised motion services. Research on Shared Motion documents timing errors &lt; 10 ms when Shared Motion is used in distributed synchronization of HTML5 video and audio, by regular, non-optimised Web browsers [SYNQ]. Though the limits of scalability has not yet been formally documented, the light-weight nature of Shared Motion indicates that online timing services may be highly scalable.</p>
 
 <h4>
 <a id="out-of-scope" class="anchor" href="#out-of-scope" aria-hidden="true"><span class="octicon octicon-link"></span></a>Out of Scope</h4>
@@ -144,6 +144,17 @@ In particular, we imagine a common API between Web browsers and providers of mul
 <a id="amendments-to-this-charter" class="anchor" href="#amendments-to-this-charter" aria-hidden="true"><span class="octicon octicon-link"></span></a>Amendments to this Charter</h3>
 
 <p>The group can decide to work on a proposed amended charter, editing the text using the Decision Process described above. The decision on whether to adopt the amended charter is made by conducting a 30-day vote on the proposed new charter. The new charter, if approved, takes effect on either the proposed date in the charter itself, or 7 days after the result of the election is announced, whichever is later. A new charter must receive 2/3 of the votes cast in the approval vote to pass. The group may make simple corrections to the charter such as deliverable dates by the simpler group decision process rather than this charter amendment process. The group will use the amendment process for any substantive changes to the goals, scope, deliverables, decision process or rules for amending the charter.</p>
+
+<h3>
+<a id="references" class="anchor" href="#references" aria-hidden="true"><span class="octicon octicon-link"></span></a>References</h3>
+
+<p>[SMP] Shared Motion Proposal 
+<a href="https://lists.w3.org/Archives/Public/public-web-and-tv/2014Dec/0016.html/">https://lists.w3.org/Archives/Public/public-web-and-tv/2014Dec/0016.html/</a>
+<a href="https://lists.w3.org/Archives/Public/public-web-and-tv/2014Dec/0017.html/">https://lists.w3.org/Archives/Public/public-web-and-tv/2014Dec/0017.html/</a></p>
+
+<p>[MSV] Ingar M. Arntzen, Njål T. Borch and Christopher P. Needham. 2013. "The Media State Vector: A unifying concept for multi-device media navigation". In Proceedings of the 5th Workshop on Mobile Video (MoVid '13). ACM, New York, NY, USA, 61-66.</p>
+
+<p>[SYNQ] Njål T. Borch and Ingar M. Arntzen, “Distributed Synchronization of HTML5 Media” (15/2014), <a href="http://norut.no/nb/node/3041/">http://norut.no/nb/node/3041/</a></p>
       </section>
     </div>
 
